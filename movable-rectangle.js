@@ -50,7 +50,7 @@
                     rectangles = that.rectangles;
 
                 for(var i = length-1; i>=0; i--){
-                    if(mouseCoordinate.x <= rectangles[i].anchorX + rectangles[i].x && mouseCoordinate.y <= rectangles[i].anchorY + rectangles[i].y ){
+                    if(mouseCoordinate.x >= rectangles[i].anchorX && mouseCoordinate.x <= rectangles[i].anchorX + rectangles[i].x && mouseCoordinate.y >= rectangles[i].anchorY && mouseCoordinate.y <= rectangles[i].anchorY + rectangles[i].y ){
                         that.selectedRectangle = rectangles[i];
                         
                         that.curMouseCoordinateX = mouseCoordinate.x;
